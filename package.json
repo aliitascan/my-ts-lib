@@ -1,0 +1,45 @@
+{
+  "name": "thekhaos-my-ts-lib",
+  "private": false,
+  "version": "0.0.1",
+  "description": "This is a simple utility package",
+  "author": "aliitascan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aliitascan/my-ts-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aliitascan/my-ts-lib/issues"
+  },
+  "keywords": ["khaos", "test", "package", "first"],
+  "type": "module",
+  "main": "./dist/my-lib.umd.cjs",
+  "module": "./dist/my-lib.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.js",
+      "require": "./dist/my-lib.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-dts": "^2.0.0-beta.2",
+    "vitest": "^0.28.5"
+  }
+}
